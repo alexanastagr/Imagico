@@ -17,8 +17,14 @@ namespace Imagico
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSelectSource_Click(object sender, EventArgs e)
         {
+            sourceDialog.ShowDialog();   
+        }
+
+        private void btnSelectOutput_Click(object sender, EventArgs e)
+        {
+            outputDialog.ShowDialog();
 
         }
     }

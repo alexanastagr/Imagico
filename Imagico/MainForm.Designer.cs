@@ -28,29 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ButtonSourceBrowse = new System.Windows.Forms.Button();
+            this.btnSelectSource = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSelectOutput = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.sourceDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.outputDialog = new System.Windows.Forms.FolderBrowserDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // ButtonSourceBrowse
+            // btnSelectSource
             // 
-            this.ButtonSourceBrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(56)))), ((int)(((byte)(0)))));
-            this.ButtonSourceBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonSourceBrowse.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonSourceBrowse.ForeColor = System.Drawing.Color.White;
-            this.ButtonSourceBrowse.Location = new System.Drawing.Point(56, 266);
-            this.ButtonSourceBrowse.Name = "ButtonSourceBrowse";
-            this.ButtonSourceBrowse.Size = new System.Drawing.Size(361, 45);
-            this.ButtonSourceBrowse.TabIndex = 0;
-            this.ButtonSourceBrowse.Text = "Select Source";
-            this.ButtonSourceBrowse.UseVisualStyleBackColor = false;
-            this.ButtonSourceBrowse.Click += new System.EventHandler(this.button1_Click);
+            this.btnSelectSource.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(56)))), ((int)(((byte)(0)))));
+            this.btnSelectSource.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectSource.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectSource.ForeColor = System.Drawing.Color.White;
+            this.btnSelectSource.Location = new System.Drawing.Point(56, 266);
+            this.btnSelectSource.Name = "btnSelectSource";
+            this.btnSelectSource.Size = new System.Drawing.Size(361, 45);
+            this.btnSelectSource.TabIndex = 0;
+            this.btnSelectSource.Text = "Select Source";
+            this.btnSelectSource.UseVisualStyleBackColor = false;
+            this.btnSelectSource.Click += new System.EventHandler(this.btnSelectSource_Click);
             // 
             // textBox1
             // 
@@ -88,18 +90,19 @@
             this.textBox2.Size = new System.Drawing.Size(361, 29);
             this.textBox2.TabIndex = 4;
             // 
-            // button1
+            // btnSelectOutput
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(185)))), ((int)(((byte)(236)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(56, 416);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(361, 47);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Select Output";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSelectOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(185)))), ((int)(((byte)(236)))));
+            this.btnSelectOutput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectOutput.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectOutput.ForeColor = System.Drawing.Color.White;
+            this.btnSelectOutput.Location = new System.Drawing.Point(56, 416);
+            this.btnSelectOutput.Name = "btnSelectOutput";
+            this.btnSelectOutput.Size = new System.Drawing.Size(361, 47);
+            this.btnSelectOutput.TabIndex = 3;
+            this.btnSelectOutput.Text = "Select Output";
+            this.btnSelectOutput.UseVisualStyleBackColor = false;
+            this.btnSelectOutput.Click += new System.EventHandler(this.btnSelectOutput_Click);
             // 
             // pictureBox1
             // 
@@ -120,10 +123,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSelectOutput);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.ButtonSourceBrowse);
+            this.Controls.Add(this.btnSelectSource);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "MainForm";
@@ -137,13 +140,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button ButtonSourceBrowse;
+        private System.Windows.Forms.Button btnSelectSource;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSelectOutput;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.FolderBrowserDialog sourceDialog;
+        private System.Windows.Forms.FolderBrowserDialog outputDialog;
     }
 }
 
