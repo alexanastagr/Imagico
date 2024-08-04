@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imagico", "Imagico\Imagico.csproj", "{4378FC94-7C89-4213-81E7-A6DCA5D2369D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4378FC94-7C89-4213-81E7-A6DCA5D2369D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4378FC94-7C89-4213-81E7-A6DCA5D2369D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4378FC94-7C89-4213-81E7-A6DCA5D2369D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4378FC94-7C89-4213-81E7-A6DCA5D2369D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {869562B4-34DB-4588-BFAE-538744B38776}
+	EndGlobalSection
+EndGlobal
